@@ -1,0 +1,31 @@
+name: QipiGo
+options:
+  deploymentTarget:
+    iOS: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  QipiGo:
+    type: application
+    platform: iOS
+    sources: [App]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: pe.ihos.qipigo.pilot
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: Generated/Info.plist
+      properties:
+        CFBundleDisplayName: QipiGo Piloto
+        UILaunchScreen: {}
+        NSLocationWhenInUseUsageDescription: QipiGo usa Localización para detectar las balizas PuntoGo cercanas mientras tienes abierta la app. No registra tu posición GPS.
+        NSBluetoothAlwaysUsageDescription: QipiGo utiliza Bluetooth para la prueba de proximidad de PuntoGo.
+schemes:
+  QipiGo:
+    build:
+      targets:
+        QipiGo: all

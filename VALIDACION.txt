@@ -1,0 +1,2 @@
+Verificación estructural: YAML de proyecto y workflow válidos; identidades, escaneo, parada en segundo plano y exportación presentes.
+No hay compilador Swift ni SDK Apple en este entorno. Compilación, firma y pruebas físicas pendientes.
